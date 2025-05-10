@@ -11,7 +11,7 @@ on:
 jobs:
   command:
     name: Use Actions Status Discord 
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       - name: Dicord Notification
         uses: sarisia/actions-status-discord@v1
