@@ -4,7 +4,7 @@
         {
             "label": "mainブランチから新規ブランチ作成",
             "type": "shell",
-            "command": "git checkout main && git pull && git checkout -b ${input:branch}",
+            "command": "git checkout main && git pull && git checkout -b ${input:branch} && send_discord \"${input:branch}\"",
             "args": [],
             "problemMatcher": [],
         },
@@ -40,7 +40,7 @@
         {
             "label": "firebaseのエミュレータの起動",
             "type": "shell",
-            "command": "firebase emulators:start --import ${input:seeds} --project manabiyaai",
+            "command": "firebase emulators:start --import ${input:seeds}",
             "args": [],
             "problemMatcher": [],
         },
